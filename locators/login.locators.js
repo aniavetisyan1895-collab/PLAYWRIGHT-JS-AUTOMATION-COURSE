@@ -1,6 +1,6 @@
 export const loginLocators = {
-  emailInput: 'input[data-qa="login-email"]',
-  passwordInput: 'input[data-qa="login-password"]',
-  loginButton: 'button[data-qa="login-button"]',
-  errorMessage: '',
+  emailInput: '[data-qa="login-email"]',
+  passwordInput: '[data-qa="login-password"]',
+  loginButton: '[data-qa="login-button"]',
+  errorMessage: 'p[style="color: red;"]'
 };
