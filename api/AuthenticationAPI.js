@@ -19,4 +19,17 @@ export class AuthenticationAPI {
 
     return cookies.cookies;
   }
+
+  async apiSignup(form) {
+  const response = await this.request.post(
+    'https://automationexercise.com/api/createAccount',
+    {
+      form
+    }
+  );
+
+  expect(response.status()).toBe(200);
+
+  return response;
+}
 }
